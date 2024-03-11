@@ -11,6 +11,7 @@ html{
 }
 body{
     background-color: #080808;
+    background-color: rgba(0,0,0,0.6);
 }
 #header{
     width: 100%;
