@@ -16,10 +16,13 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    position: relative;
-    isolation: isolate;
+    background-image: url(ima/img3.webp);
+    background-size: cover;
+    background-position:top;
+    /* position: relative;
+    isolation: isolate; */
 }
-#header::after{
+/* #header::after{
     content: '';
     position: absolute;
     z-index: -1;
@@ -28,7 +31,7 @@ body{
     background-image: url(ima/img3.webp);
     background-size: cover;
     background-position:top;
-}
+} */
 .container{
     padding: 10px 10%;
 }
