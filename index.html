@@ -1,195 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Personal Portfolio website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="ima/logo.png" class="logo" style="width: 100px; height: 100px; border-radius: 50px;">
-                <ul id="sidemenu"><li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text" style="box-shadow: 10px 1px 16px #ff004f .5;">
-                <p>UI/UX Design</p>
-                <h1>Hi, I'm <span>Ameer</span> Proddutur <br> From India</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img
+            src="ima/logo.png"
+            class="logo"
+            style="width: 100px; height: 100px; border-radius: 50px"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text" style="box-shadow: 10px 1px 16px #ff004f 0.5">
+          <p>UI/UX Design</p>
+          <h1>
+            Hi, I'm <span>Ameer</span> Proddutur <br />
+            From India
+          </h1>
         </div>
+      </div>
     </div>
     <!-- ============About============== -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="ima/img1.webp" alt="" style="width: 350px; height: 350px;">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p style="text-align: justify;">
-                    I started as Freelancer and now I work with commitment and on-time delivery with me. <br> You can leverage from the following benefits</p>
-                    <ul>
-                        <li><i class="fa-solid fa-check-double"></i> Sincere,experience and dedicated team</li>
-                        <li><i class="fa-solid fa-check-double"></i> Use of latest and flexible Aglie Developmentmodel</li>
-                        <li><i class="fa-solid fa-check-double"></i> UI/UX expertise,building user friendly website</li>
-                        <li><i class="fa-solid fa-check-double"></i> Scalabel infrastructure support for your business necessities</li>
-                    </ul>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skilla</p>
-                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links"  onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul><li><span>Java Full Stack Development</span><br>React Js | Spring Boot</li></ul>
-                        <ul><li><span>Programming Language</span><br>Java(Core&Adv) Javascript | SQL</li></ul>
-                        <ul><li><span>Frontend Development</span><br>React Js|HTML5|CSS5|Bootstrap</li></ul>
-                        <ul><li><span>Backend Development</span><br>Spring Boot|API's|DSA</li></ul>
-                        <ul><li><span>Database</span><br>MySQL</li></ul>
-                        <ul><li><span>Version Control&Collaboration</span><br>Git|GitHub</li></ul>
-                        <ul><li>Problem solving</li></ul>
-                        <ul><li>Skilled in Debugging</li></ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul><li><span>Full Stack Developer</span><br>Worked at Cogen Soft Tech</li></ul>
-                        <ul><li><span>Internship</span><br>Thops Tech Career Solutions</li></ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul><li><span>2017-2019</span><br>Intermediate (M.P.C)</li></ul>
-                        <ul><li><span>2019-2023</span><br>B.Tech(Electronics and Commmunication Engineering)</li></ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="ima/img1.webp"
+              alt=""
+              style="width: 350px; height: 350px"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p style="text-align: justify">
+              I started as Freelancer and now I work with commitment and on-time
+              delivery with me. <br />
+              You can leverage from the following benefits
+            </p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-check-double"></i> Sincere,experience and
+                dedicated team
+              </li>
+              <li>
+                <i class="fa-solid fa-check-double"></i> Use of latest and
+                flexible Aglie Developmentmodel
+              </li>
+              <li>
+                <i class="fa-solid fa-check-double"></i> UI/UX
+                expertise,building user friendly website
+              </li>
+              <li>
+                <i class="fa-solid fa-check-double"></i> Scalabel infrastructure
+                support for your business necessities
+              </li>
+            </ul>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skilla
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Java Full Stack Development</span><br />React Js |
+                  Spring Boot
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span>Programming Language</span><br />Java(Core&Adv)
+                  Javascript | SQL
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span>Frontend Development</span><br />React
+                  Js|HTML5|CSS5|Bootstrap
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span>Backend Development</span><br />Spring Boot|API's|DSA
+                </li>
+              </ul>
+              <ul>
+                <li><span>Database</span><br />MySQL</li>
+              </ul>
+              <ul>
+                <li>
+                  <span>Version Control&Collaboration</span><br />Git|GitHub
+                </li>
+              </ul>
+              <ul>
+                <li>Problem solving</li>
+              </ul>
+              <ul>
+                <li>Skilled in Debugging</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Full Stack Developer</span><br />Worked at Cogen Soft
+                  Tech
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span>Internship</span><br />Thops Tech Career Solutions
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2017-2019</span><br />Intermediate (M.P.C)</li>
+              </ul>
+              <ul>
+                <li>
+                  <span>2019-2023</span><br />B.Tech(Electronics and
+                  Commmunication Engineering)
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- ===========Services==========-->
     <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My services</h1>
-            <div class="services-list">
-                <div> 
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>The most modern and high-quality design made at a professional level.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Web Development</h2>
-                    <p>high-quality Development of sites at the professional level</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div><i class="fa-brands fa-app-store"></i>
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              The most modern and high-quality design made at a professional
+              level.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Web Development</h2>
+            <p>high-quality Development of sites at the professional level</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
 
-                    <h2>Mobile Apps</h2>
-                    <p>professional Development of application for IOS and Android</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
+            <h2>Mobile Apps</h2>
+            <p>professional Development of application for IOS and Android</p>
+            <a href="#">Learn more</a>
+          </div>
         </div>
+      </div>
     </div>
     ==============portfolio -->
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="./My_Work/Simon1.png" alt="">
-                    <div class="layer">
-                        <h3>Simon says game</h3> 
-                        <p>Simon Game
-                            Designed and developed a classic Simon game using HTML, CSS, and JavaScript,
-                            highlighting my proficiency in frontend web development.
-                            Utilized HTML for creating the game structure, CSS for styling and enhancing the user interface,
-                            and JavaScript for game logic and interactivity.
-                            </p> 
-                        <a href="./My_Work/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="TextUtils.png" alt="">
-                    <div class="layer">
-                        <h3>TextUtils</h3> 
-                        <p>"textutils" is a React.js application designed for text manipulation tasks. It offers various functionalities like text formatting, word count, character count, and more, all within an intuitive user interface. Users can conveniently modify and analyze text inputs for diverse purposes, enhancing productivity and efficiency in handling textual data.</p> 
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="ima/work-1.png" alt="">
-                    <div class="layer">
-                        <h3>Social Media App</h3> 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed praesentium delectus cumque provident incidunt accusamus</p> 
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./My_Work/Simon1.png" alt="" />
+            <div class="layer">
+              <h3>Simon says game</h3>
+              <p>
+                Simon Game Designed and developed a classic Simon game using
+                HTML, CSS, and JavaScript, highlighting my proficiency in
+                frontend web development. Utilized HTML for creating the game
+                structure, CSS for styling and enhancing the user interface, and
+                JavaScript for game logic and interactivity.
+              </p>
+              <a href="./My_Work/index.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
-            <a href="#" class="btn">See More</a>
-        </div> 
+          </div>
+          <div class="work">
+            <img src="TextUtils.png" alt="" />
+            <div class="layer">
+              <h3>TextUtils</h3>
+              <p>
+                "textutils" is a React.js application designed for text
+                manipulation tasks. It offers various functionalities like text
+                formatting, word count, character count, and more, all within an
+                intuitive user interface. Users can conveniently modify and
+                analyze text inputs for diverse purposes, enhancing productivity
+                and efficiency in handling textual data.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="ima/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                praesentium delectus cumque provident incidunt accusamus
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
     </div>
     <!-- =============contact================= -->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-regular fa-paper-plane"></i>prodduturameer8552@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>7569794757</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/ameer-proddutur-65335521a/"><i class="fa-brands fa-linkedin"></i></a>
-                        <span style="margin-left: 5px;">Linkedin</span>
-
-
-                    </div>
-                    <a href="ima/Ameer__Proddutur E2 (2).pdf" download="" class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your name" required>
-                        <input type="email" name="email" placeholder="Enter your email" required>
-                        <textarea name="message" id="" rows="6" placeholder="Enter your message"></textarea>
-                        <button type="submit" class="btn btn2">submit</button>
-                    </form>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-regular fa-paper-plane"></i
+              >prodduturameer8552@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>7569794757</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/ameer-proddutur-65335521a/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <span style="margin-left: 5px">Linkedin</span>
             </div>
+            <a
+              href="ima/Ameer__Proddutur E2 (2).pdf"
+              download=""
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="a6c2b5ff-4160-415c-a3ed-337c14651321">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+              <textarea
+                name="message"
+                id=""
+                rows="6"
+                placeholder="Enter your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">submit</button>
+            </form>
+          </div>
         </div>
-        <div class="copyright">
-            <p style="color: #fff;">Copyright <i class="fa-regular fa-copyright"></i> Ameer.Mode with by <i class="fa-solid fa-heart"></i> Web Div</p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p style="color: #fff">
+          Copyright <i class="fa-regular fa-copyright"></i> Ameer.Mode with by
+          <i class="fa-solid fa-heart"></i> Web Div
+        </p>
+      </div>
     </div>
-    
-    
-    <script>
-        let tablinks=document.getElementsByClassName("tab-links");
-        let tabcontents=document.getElementsByClassName("tab-contents");
-        function opentab(tab){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link")
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab")
-            }
-            event.currentTarget.classList.add("active-link")
-            document.getElementById(tab).classList.add("active-tab")
 
+    <script>
+      let tablinks = document.getElementsByClassName("tab-links");
+      let tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tab) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tab).classList.add("active-tab");
+      }
     </script>
     <script>
-        let sidemenu=document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right="0";
-        }
-        function closemenu(){
-            sidemenu.style.right="-200px";
-        }
+      let sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
     </script>
-</body>
+    
+  </body>
 </html>
